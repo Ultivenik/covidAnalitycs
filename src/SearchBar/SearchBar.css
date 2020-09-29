@@ -1,0 +1,18 @@
+form{
+    margin: 120px 0 50px 0;
+}
+
+ #searchbar{
+    border: 2px solid rgba(0, 0, 0, 0.192) ;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+#searchbar:hover{
+    border: 2px solid rgba(0, 0, 0, 0.465);
+    box-shadow: 9px 8px 6px -9px rgba(0,0,0,0.75);
+}
+
+#searchbar::placeholder{
+    color: rgba(0, 0, 0, 0.424);
+}

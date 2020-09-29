@@ -1,0 +1,44 @@
+.centered > .stretched > .ui .grid{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.centered > .stretched > .aligned> .testSection {
+    background: rgba(173, 216, 230, 0.507);
+    box-shadow: 9px 8px 19px -9px rgba(0,0,0,0.75);
+    margin-top: 10px;
+    margin-bottom: 150px;
+}
+#itemSection>.stretched > .ui> .stretched>.four> .column.center{
+    padding: 0 !important;
+    line-height: 1.9;
+    background: #fff;
+    border-radius: 5px;
+    margin: 15px !important;
+}
+#itemSection>.stretched > .ui> .stretched>.four> .column.center ul{
+    list-style-type: none;
+    text-align-last: center;
+    padding: 0;
+}
+@media screen and (max-width: 940px){
+    #itemSection>.stretched > .ui> .stretched>.four> .column.center{
+        width: 85% !important;
+    }
+}
+@media screen and (max-width: 780px){
+    #itemSection>.stretched > .ui> .stretched>.four> .column.center{
+        margin: 15px;
+    }
+    #itemSection>.stretched > .ui> .stretched>.four> .column.center ul{
+        font-size: 12px;
+    }
+    #itemSection>.stretched > .ui>.segment>.value>h3{
+        font-size: 12px;
+        margin: 0;
+        line-height: 1.7;
+    }
+    #itemSection>.stretched >.aligned> .segment> .column h3{
+        margin: 0;
+        font-size: 12px;
+    }
+}

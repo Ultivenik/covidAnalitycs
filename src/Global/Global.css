@@ -1,0 +1,50 @@
+.ui > .stretched > .grid >.globalSection{
+    background: #fff;
+    padding: 0;
+    margin: 15px;
+    height: 100%;
+    border-radius: 5px;
+}
+.ui > .column >.shadow{
+    border:1px solid rgba(0, 0, 0, 0.274);
+    box-shadow: 9px 8px 15px -9px rgba(0, 0, 0, 0.397);
+}
+.ui > .column >.deathSection{
+    background-color: rgba(255, 0, 0, 0.082);
+    color: #fe0000;
+    height: 100%;
+}
+
+.ui > .column >.casesSection{
+    background-color: rgba(248, 176, 8, 0.109);
+    color: #b46601;
+    height: 100%;
+}
+
+.ui > .column >.recoveredSection{
+    background-color: rgba(36, 248, 8, 0.116);
+    color: #006a02;
+    height: 100%;
+}
+img{
+    width: 80px;
+}
+
+@media screen and (max-width: 940px){
+    /* obligation du !important afin d'écraser
+    les mesures prédéfinies, elles mêmes en !important de sémantic ui */
+    .ui > .stretched > .grid.five > .column {
+        padding: 0 !important;
+        margin:15px !important;
+        width: 85%;
+    }
+    .ui > .stretched > .grid.five > .column:last-child {
+        margin-bottom: 50px !important;
+    }
+
+}
+@media screen and (max-width: 780px){
+    .ui > .stretched > .grid.five > .column>.ui.segment {
+        font-size: 12px;
+    }
+}
