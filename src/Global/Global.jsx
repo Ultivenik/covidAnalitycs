@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import './Global.css'
-import HeartCases from './../modules/heartCases'
-import HeartDeath from './../modules/heartDeath'
-import HeartRecovery from './../modules/heartRecovery'
+import HeartCases from '../modules/heartCases'
+import HeartDeath from '../modules/heartDeath'
+import HeartRecovery from '../modules/heartRecovery'
 
  export default class Global extends Component {
      constructor(props) {
@@ -20,7 +20,7 @@ import HeartRecovery from './../modules/heartRecovery'
             axios.get('https://covid-193.p.rapidapi.com/statistics?country=all', {
                 "headers": {
                     "x-rapidapi-host": "covid-193.p.rapidapi.com",
-                    "x-rapidapi-key": "ecb8db3264mshce9a7d52396a247p1ba298jsn5e8e6bcd9983"
+                    "x-rapidapi-key": process.env.REACT_APP_API_KEY
                 }
             })
             .then(res => {

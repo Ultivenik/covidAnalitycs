@@ -32,7 +32,7 @@ class App extends Component {
             "method":"GET",
             "headers": {
                 "x-rapidapi-host": "covid-193.p.rapidapi.com",
-                "x-rapidapi-key": process.env.REACT_APP_KEY,
+                "x-rapidapi-key": process.env.REACT_APP_API_KEY,
             }
         })
         .then(list => {
