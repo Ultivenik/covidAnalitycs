@@ -25,6 +25,7 @@ import HeartRecovery from '../modules/heartRecovery'
             })
             .then(res => {
                 const resultWorld = res.data.response[0]
+                console.log(resultWorld);
                 this.setState({
                     item: resultWorld,
                     isLoaded:true
